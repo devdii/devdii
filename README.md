@@ -54,7 +54,7 @@
 ### 🐍 Contribution Snake 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devdii/devdii/output/github-contribution-grid-snake.svg" alt="Snake eating contributions" />
+  <img src="https://raw.githubusercontent.com/devdii/devdii/main/github-contribution-grid-snake.svg" />
 </p>
 
 ---
