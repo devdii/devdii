@@ -1,4 +1,4 @@
-![GitHub Contribution Snake](https://raw.githubusercontent.com/devdii/devdii/output/github-contribution-grid-snake-dark.svg)
+
 
 <h1 align="center">Hi, I'm Dev Chauhan! 👋</h1>
 
@@ -49,21 +49,12 @@
 </p>
 
 ## 🐍 Contribution Graph
-<div align="center" style="position: relative; padding: 20px; background: linear-gradient(135deg, #1f1f1f, #3a3a3a); border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); overflow: hidden;">
-  <img 
-    src="https://raw.githubusercontent.com/devdii/devdii/output/github-contribution-grid-snake-dark.svg" 
-    alt="Snake Animation" 
-    style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; transition: all 0.3s ease; cursor: pointer;"
-    onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.7)';" 
-    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
-    onclick="window.open(this.src, '_blank').focus()"
-  />
-</div>
+![GitHub Contribution Snake](https://raw.githubusercontent.com/devdii/devdii/output/github-contribution-grid-snake-dark.svg)
 
 ## 📫 Connect With Me
 
 <p align="center">
-  <a href="https://linkedin.com/in/yourlinkedin" target="_blank">
+  <a href="https://linkedin.com/in/dev-chauhan-52b2a4260" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://twitter.com/devtweets" target="_blank">
@@ -80,7 +71,7 @@
 ## 🎧 Now Playing
 
 <div align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=314fl6uucp5hkprwyfyssbb3c4zq&cover_image=true&theme=natemoo-re" alt="Spotify Now Playing" />
+  <img src="https://spotify-github-profile.vercel.app/api/view?uid=314ff6uucp5hkprvvyfyssbb3c4zq&cover_image=true&theme=natemoo-re" alt="Spotify Now Playing" />
 </div>
 
 <div align="center">
