@@ -47,8 +47,15 @@
 </p>
 
 ## 🐍 Contribution Graph
-<div align="center" style="position: relative; padding: 20px; background: linear-gradient(135deg, #1f1f1f, #3a3a3a); border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);">
-  <img src="https://github.com/devdii/devdii/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" style="max-width: 100%; height: auto; border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.7)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.5)';" />
+<div align="center" style="position: relative; padding: 20px; background: linear-gradient(135deg, #1f1f1f, #3a3a3a); border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); overflow: hidden;">
+  <img 
+    src="https://raw.githubusercontent.com/devdii/devdii/output/github-contribution-grid-snake-dark.svg" 
+    alt="Snake Animation" 
+    style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; transition: all 0.3s ease; cursor: pointer;"
+    onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.7)';" 
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+    onclick="window.open(this.src, '_blank').focus()"
+  />
 </div>
 
 ## 📫 Connect With Me
