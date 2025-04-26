@@ -1,0 +1,57 @@
+name: 🐍 Advanced GitHub Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"    # Every 4 hours
+    - cron: "0 0 * * *"      # Daily at midnight
+    - cron: "0 12 * * *"     # Daily at noon
+  workflow_dispatch:
+  push:
+    branches:
+      - main                 # Runs on main branch updates
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0     # Fetch all history
+
+      - name: 🐍 Generate Snake GIF with Custom Colors
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # Customize snake color and dots
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.gif?color_snake=blue&color_dots=#ffe066,#f4a261,#e76f51,#2a9d8f,#264653
+
+      - name: 💾 Deploy to Storage
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "🤖 Auto-generate snake animation with custom colors"
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🔄 Update README with Snake
+        run: |
+          echo "![GitHub Contribution Snake](https://github.com/${{ github.repository_owner }}/${{ github.repository_owner }}/blob/output/github-contribution-grid-snake-dark.svg)" >> README.md
+
+  cleanup:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧹 Cleanup Old Workflows
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 7
+          keep_minimum_runs: 3
