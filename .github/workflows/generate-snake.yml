@@ -8,7 +8,11 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main                 # Runs on main branch updates
+      - main
+
+# Add permissions here
+permissions:
+  contents: write
 
 jobs:
   generate:
@@ -19,14 +23,13 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0     # Fetch all history
+          fetch-depth: 0
 
       - name: 🐍 Generate Snake GIF with Custom Colors
         uses: Platane/snk@v3
         id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
-          # Customize snake color and dots
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
@@ -44,7 +47,25 @@ jobs:
 
       - name: 🔄 Update README with Snake
         run: |
-          echo "![GitHub Contribution Snake](https://github.com/${{ github.repository_owner }}/${{ github.repository_owner }}/blob/output/github-contribution-grid-snake-dark.svg)" >> README.md
+          # Use proper image URL and replacement
+          IMAGE_URL="https://raw.githubusercontent.com/${{ github.repository_owner }}/${{ github.repository_owner }}/output/github-contribution-grid-snake-dark.svg"
+          README_CONTENT=$(cat README.md)
+          
+          # Check if snake already exists in README
+          if [[ "$README_CONTENT" == *"![GitHub Contribution Snake]"* ]]; then
+            # Replace existing snake
+            echo "$README_CONTENT" | sed "s|\!\[GitHub Contribution Snake\].*|\![GitHub Contribution Snake\]($IMAGE_URL)|g" > README.md
+          else
+            # Add new snake at top
+            echo -e "![GitHub Contribution Snake]($IMAGE_URL)\n\n$README_CONTENT" > README.md
+          fi
+          
+          # Commit changes if any
+          git config --global user.name "github-actions"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "📝 Update README with contribution snake" || exit 0
+          git push
 
   cleanup:
     needs: generate
