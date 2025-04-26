@@ -68,12 +68,6 @@
   </a>
 </p>
 
-## 🎧 Now Playing
-
-<div align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=314ff6uucp5hkprvvyfyssbb3c4zq&cover_image=true&theme=natemoo-re" alt="Spotify Now Playing" />
-</div>
-
 <div align="center">
   
   ### Show some ❤️ by starring repositories you find interesting!
