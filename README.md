@@ -1,3 +1,5 @@
+![GitHub Contribution Snake](https://raw.githubusercontent.com/devdii/devdii/output/github-contribution-grid-snake-dark.svg)
+
 <h1 align="center">Hi, I'm Dev Chauhan! 👋</h1>
 
 <p align="center">
