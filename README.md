@@ -41,12 +41,12 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=devdii&show_icons=true&theme=radical&count_private=true" alt="GitHub Stats" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=devdii&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0D1117&title_color=f2055c&icon_color=F8D866&text_color=c9d1d9&ring_color=ff00f7" alt="GitHub Stats" height="170" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devdii&layout=compact&theme=radical" alt="Top Languages" height="170" />
 </div>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=devdii&theme=radical" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devdii&theme=radical&hide_border=true&background=0D1117&stroke=0D1117&fire=ff00f7&currStreakLabel=ff00f7&sideLabels=f2055c" alt="GitHub Streak" />
 </p>
 
 ## 🐍 Contribution Graph
