@@ -13,6 +13,16 @@
 
 ## 🚀 About Me
 
+<table>
+<tr>
+<td width="35%" align="center">
+
+<img src="./readme.svg" alt="Dev Portfolio" width="280"/>
+
+</td>
+
+<td width="65%">
+
 > Crafting exceptional web experiences through clean code and creative solutions
 
 - 💻 **Full-Stack Developer** specializing in React & Node.js ecosystems
@@ -20,6 +30,10 @@
 - 🌱 Learning advanced React patterns, TypeScript, and Next.js
 - 👯 Open to collaborate on innovative web projects and open-source contributions
 - 💬 Ask me about JavaScript, React, or frontend development best practices
+
+</td>
+</tr>
+</table>
 
 ## 🛠️ Tech Stack
 
